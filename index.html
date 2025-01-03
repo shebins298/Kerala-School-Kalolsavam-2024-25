@@ -16,26 +16,25 @@
         }
 
         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background: #2c3e50;  /* Deep blue header for a professional look */
             color: white;
-            padding: 40px 20px;
+            padding: 20px 30px;
             border-bottom: 4px solid #2980b9;  /* Lighter blue accent */
             position: relative;
-            text-align: center;
+            text-align: left;
         }
 
         .logo {
             max-width: 120px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
         }
 
         h1 {
             font-family: 'Merriweather', serif;
             font-size: 3rem;
             margin: 0;
-            padding-top: 50px;
             font-weight: 700;
         }
 
@@ -139,12 +138,14 @@
         /* Mobile Styles */
         @media (max-width: 768px) {
             header {
+                flex-direction: column;
                 padding: 20px;
+                text-align: center;
             }
 
             h1 {
                 font-size: 2rem;
-                padding-top: 40px;
+                padding-top: 10px;
             }
 
             .districts-list {
@@ -193,9 +194,10 @@
     <header>
         <!-- Logo Placeholder in Top Right Corner -->
         <img src="https://via.placeholder.com/120x120/ff9b8b/ffffff?text=Logo" alt="Logo" class="logo">
-        <h1>Kerala School Kalolsavam 2024</h1>
-        <p>Choose Your District</p>
-        <img src="https://via.placeholder.com/1200x400/ff9b8b/ffffff?text=Kerala+School+Kalolsavam+2024" class="header-img" alt="Kerala School Kalolsavam">
+        <div>
+            <h1>Kerala School Kalolsavam 2024</h1>
+            <p>Choose Your District</p>
+        </div>
     </header>
 
     <div class="districts-list">
