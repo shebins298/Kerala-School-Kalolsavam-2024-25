@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Your District - Kerala School Kalolsavam 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -22,6 +23,7 @@
         }
 
         h1 {
+            font-family: 'Lora', serif;
             font-size: 3rem;
             margin: 0;
         }
@@ -51,6 +53,7 @@
         }
 
         ol {
+            font-family: 'Roboto', sans-serif;
             font-size: 1.5rem;
             line-height: 2;
             text-align: left;
@@ -72,6 +75,20 @@
             transform: scale(1.05);
         }
 
+        ol li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #f4a261;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        ol li a:hover {
+            background-color: #e76f51;
+        }
+
         footer {
             background-color: #f4a261;  /* Soft peach footer */
             color: white;
@@ -87,6 +104,16 @@
             margin: 0;
         }
 
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -95,6 +122,16 @@
             100% {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .districts-list {
+                width: 100%;
+                padding: 15px;
+            }
+            ol {
+                font-size: 1.2rem;
             }
         }
 
@@ -111,25 +148,29 @@
     <div class="districts-list">
         <h2>Select Your District</h2>
         <ol>
-            <li>Thiruvananthapuram</li>
-            <li>Kollam</li>
-            <li>Pathanamthitta</li>
-            <li>Alappuzha</li>
-            <li>Kottayam</li>
-            <li>Idukki</li>
-            <li>Ernakulam</li>
-            <li>Thrissur</li>
-            <li>Palakkad</li>
-            <li>Malappuram</li>
-            <li>Kozhikode</li>
-            <li>Wayanad</li>
-            <li>Kannur</li>
-            <li>Kasaragod</li>
+            <li><a href="https://example.com/thiruvananthapuram" target="_blank">Thiruvananthapuram</a></li>
+            <li><a href="https://example.com/kollam" target="_blank">Kollam</a></li>
+            <li><a href="https://example.com/pathanamthitta" target="_blank">Pathanamthitta</a></li>
+            <li><a href="https://example.com/alappuzha" target="_blank">Alappuzha</a></li>
+            <li><a href="https://example.com/kottayam" target="_blank">Kottayam</a></li>
+            <li><a href="https://example.com/idukki" target="_blank">Idukki</a></li>
+            <li><a href="https://example.com/ernakulam" target="_blank">Ernakulam</a></li>
+            <li><a href="https://example.com/thrissur" target="_blank">Thrissur</a></li>
+            <li><a href="https://example.com/palakkad" target="_blank">Palakkad</a></li>
+            <li><a href="https://example.com/malappuram" target="_blank">Malappuram</a></li>
+            <li><a href="https://example.com/kozhikode" target="_blank">Kozhikode</a></li>
+            <li><a href="https://example.com/wayanad" target="_blank">Wayanad</a></li>
+            <li><a href="https://example.com/kannur" target="_blank">Kannur</a></li>
+            <li><a href="https://example.com/kasaragod" target="_blank">Kasaragod</a></li>
         </ol>
     </div>
 
     <footer>
         <p>&copy; Kerala School Kalolsavam 2024. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/30?text=FB" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/30?text=TW" alt="Twitter"></a>
+        </div>
     </footer>
 
 </body>
