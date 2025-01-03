@@ -45,7 +45,7 @@
             background-color: #ffffff;  /* White background for list */
             margin: 20px auto;
             padding: 30px;
-            width: 80%;
+            width: 90%;
             max-width: 900px;
             border-radius: 10px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -125,13 +125,52 @@
             }
         }
 
+        /* Mobile Styles */
         @media (max-width: 768px) {
-            .districts-list {
-                width: 100%;
-                padding: 15px;
+            header {
+                padding: 20px;
             }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .districts-list {
+                padding: 15px;
+                width: 95%;
+            }
+
             ol {
                 font-size: 1.2rem;
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .social-icons a {
+                margin: 0 8px;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Additional Mobile Styles */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .districts-list {
+                padding: 10px;
+            }
+
+            ol {
+                font-size: 1rem;
             }
         }
 
